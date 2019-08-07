@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="false"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/home"
+    android:orientation="vertical"
+    tools:context=".settings_ui">
+
+    <RelativeLayout
+
+        android:layout_width="356dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/cardview_shadow_start_color">
+
+        <!-- close button -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="54dp"
+            android:layout_height="57dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/close"
+            android:padding="1dp"
+            android:text="" />
+
+        <!-- sound -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"
+            android:text="Sound"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <!-- music -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="300dp"
+            android:text="Music"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <!-- notification -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="400dp"
+            android:text="Notification"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <!-- sound toggle -->
+        <Switch
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="210dp"
+            android:layout_marginRight="30dp"
+            android:text="" />
+
+        <!-- music toggle -->
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="310dp"
+            android:layout_marginRight="30dp" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="410dp"
+            android:layout_marginRight="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="276dp"
+            android:layout_height="159dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="33dp"
+            app:srcCompat="@drawable/logo" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="false"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/lvll"
+    android:orientation="vertical"
+    tools:context=".homescreen">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_gravity="clip_horizontal"
+        android:layout_marginTop="50dp"
+        android:fadingEdge="horizontal|vertical"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="130dp"
+        android:layout_height="114dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="597dp"
+        android:background="@drawable/resume"
+        android:onClick="showLevel1" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="10dp"
+        android:background="#e9ecf2"
+        android:foreground="@drawable/settings"
+        android:onClick="showSettings" />
+
+    <Button
+        android:id="@+id/buttonhow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:background="#e9ecf2"
+        android:foreground="@drawable/htp"
+        android:onClick="showHowToPlay" />
+
+    <Button
+        android:id="@+id/buttonScore"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/buttonSettings"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginRight="153dp"
+        android:layout_toEndOf="@+id/buttonSettings"
+        android:layout_toRightOf="@+id/buttonSettings"
+        android:background="#e9ecf2"
+        android:foreground="@drawable/hscore"
+        android:onClick="showScore" />
+
+
+</RelativeLayout>
